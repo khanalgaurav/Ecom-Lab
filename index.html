@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ecommerce</title>
     <style>
         .mainli:hover .subli{
             display: block;
         }
+        
     </style>
 </head>
 <body>
     <div class="border border-red-500 p-5 rounded-lg">
-        <div class="border border-blue-600 bg-[#FAF7F0] rounded-xl">
+        <div class="flex relative pr-5 items-center justify-between border border-blue-600 bg-[#FAF7F0] rounded-xl">
             <div class="flex items-center gap-2">
                 <img src="logo-black.png" height="80px" width="80px" alt="Logo">
                 <p class="text-4xl">दराज</p>
+            </div>
+            <!-- search box -->
+            <div class="text-2xl flex items-center gap-2 ">
+                <input id="input-box" type="search" class="focus:outline-none rounded-full px-5 py-1 h-10 w-9 translate-x-12 transition-all duration-300 ease-in" placeholder="Search">
+                <div id="search" class="flex items-center justify-center bg-black text-white rounded-full h-10 w-10 z-10">
+                    <i class="fa fa-search cursor-pointer" aria-hidden="true"></i>
+                </div>
+                <div id="cross" class="flex items-center justify-center h-10 w-10 -translate-x-12 bg-red-500 rounded-full text-white transition-all duration-300 ease-in">
+                    <i class="fa-solid fa-xmark cursor-pointer"></i>
+                </div>
             </div>
         </div>
         <div class="flex">
@@ -43,9 +55,10 @@
                     <li class="p-3">Groceries</li>
                 </ul>
             </div>
-            <div class="h-[290px] w-3/4 rounded-xl border border-blue-500"></div>
+            <div class="w-3/4 rounded-xl border border-blue-500"></div>
         </div>
         <div class="border border-blue-600 rounded-lg">Footer</div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
