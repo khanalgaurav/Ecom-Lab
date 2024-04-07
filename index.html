@@ -10,14 +10,13 @@
         .mainli:hover .subli{
             display: block;
         }
-        
     </style>
 </head>
 <body>
     <div class="border border-red-500 p-5 rounded-lg">
         <div class="flex relative pr-5 items-center justify-between border border-blue-600 bg-[#FAF7F0] rounded-xl">
             <div class="flex items-center gap-2">
-                <img src="logo-black.png" height="80px" width="80px" alt="Logo">
+                <img class="animate-spin-slow" src="logo-black.png" height="80px" width="80px" alt="Logo">
                 <p class="text-4xl">दराज</p>
             </div>
             <!-- search box -->
@@ -60,5 +59,19 @@
         <div class="border border-blue-600 rounded-lg">Footer</div>
     </div>
     <script src="script.js"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'gaurav' : 'red',
+                },
+                animation: {
+                    'spin-slow': 'spin 10s linear infinite',
+                }
+            }
+      }
+    }
+    </script>
 </body>
 </html>
